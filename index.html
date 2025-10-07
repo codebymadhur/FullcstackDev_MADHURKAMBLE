@@ -1,0 +1,81 @@
+    <div id="toast-message" class="toast-message" style="display:none;"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeebCart - Shopping Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WeebCart</h1>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a id="cart-icon" href="cart.html">🛒 <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to WeebCart</h2>
+            <p>Your one-stop shop for unique finds. Enjoy a seamless, secure, and fun shopping experience!</p>
+            <button class="cta-btn" onclick="scrollToProducts()">Shop Now</button>
+        </div>
+        <div class="hero-img">
+            <img src="assets/Gemini_Generated_Image_24p38g24p38g24p3.png" alt="Hero" />
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Why Choose WeebCart?</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <img src="assets/Gemini_Generated_Image_24p38g24p38g24p3 (1).png" alt="Fast Delivery" style="width:60px;height:60px;object-fit:contain;">
+                <h3>Fast Delivery</h3>
+                <p>Get your products delivered quickly and safely to your doorstep.</p>
+            </div>
+            <div class="feature">
+                <img src="assets/Gemini_Generated_Image_24p38g24p38g24p3 (2).png" alt="Secure Payment" style="width:60px;height:60px;object-fit:contain;">
+                <h3>Secure Payment</h3>
+                <p>All transactions are encrypted and your data is protected.</p>
+            </div>
+            <div class="feature">
+                <img src="assets/Gemini_Generated_Image_24p38g24p38g24p3 (3).png" alt="24/7 Support" style="width:60px;height:60px;object-fit:contain;">
+                <h3>24/7 Support</h3>
+                <p>We are here to help you anytime, anywhere.</p>
+            </div>
+        </div>
+        <button class="cta-btn" onclick="scrollToProducts()">Start Shopping</button>
+    </section>
+    <section class="products" id="products">
+        <h2>Featured Products</h2>
+        <div class="product-list" id="product-list">
+            <!-- Product cards will be rendered by JS -->
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2>About WeebCart</h2>
+        <p>WeebCart brings you the best products with a smooth shopping experience, creative visuals, and secure payment options.</p>
+    </section>
+    <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@weebcart.com</p>
+    <p>Phone: +91 8378951310</p>
+    <p>Owner: Madhur Kamble</p>
+    </section>
+    <div class="payment-success-float" id="payment-success" style="display:none;">
+        <div class="success-icon">&#10004;</div>
+        <h2>Payment Successful!</h2>
+        <img src="assets/Gemini_Generated_Image_24p38g24p38g24p3 (5).png" alt="Payment Success" />
+        <p class="success-message">Thank you for shopping with <strong>WeebCart</strong>!<br>Your order has been placed and will be processed soon.</p>
+        <button onclick="closePaymentSuccess()">Continue Shopping</button>
+    </div>
+    <!-- Cart sidebar and toggle removed for new cart page -->
+    <footer>
+        <p>&copy; 2025 WeebCart. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

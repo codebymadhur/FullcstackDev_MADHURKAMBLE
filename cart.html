@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeebCart - Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WeebCart</h1>
+        <nav>
+            <a href="index.html#products">Products</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+            <a id="cart-icon" href="cart.html">🛒 <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+    <section class="cart-page">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <div id="cart-empty">Your cart is empty.</div>
+        <button onclick="checkout()" id="checkout-btn">Checkout</button>
+    </section>
+    <div class="payment-success-float" id="payment-success" style="display:none;">
+        <div class="success-icon">&#10004;</div>
+        <h2>Payment Successful!</h2>
+        <p class="success-message">Thank you for shopping with <strong>WeebCart</strong>!<br>Your order has been placed and will be processed soon.</p>
+        <button onclick="returnToMain()">Return to Main Page</button>
+    </div>
+    <footer>
+        <p>&copy; 2025 WeebCart. All rights reserved.</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
